@@ -6,7 +6,7 @@ app = FastAPI()
 # Endpoint para verificar se a API está funcionando
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok", "origem": "feature"}
 
 # Endpoint para consultar a versão da API
 @app.get("/version")
